@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Community = () => {
   const [data, setdata] = useState([]);
   const getUsers = async () => {
-    const request = await fetch("http://localhost:5785/api/v1/users/all");
+    const request = await fetch("https://em-backend-chra.onrender.com/api/v1/users/all");
     const response = await request.json();
     console.log(response.users);
     setdata(response.users);

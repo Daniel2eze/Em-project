@@ -19,7 +19,7 @@ const Home = () => {
   const [bioProfile, setBioProfile] = useState([]);
   const getBioProfile = async () => {
     try {
-      const request = await fetch('http://localhost:5785/api/vi/users', {
+      const request = await fetch('https://em-backend-chra.onrender.com/api/vi/users', {
         headers: {
           'Content-type': 'application/json',
           Authorization: `Bearer ${token}`,

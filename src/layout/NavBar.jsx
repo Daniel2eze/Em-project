@@ -26,7 +26,7 @@ const Navbar = () => {
       if (term) {
         try {
           const request = await fetch(
-            `http://localhost:5785/api/v1/users/search?searchTerm=${term}`,
+            `https://em-backend-chra.onrender.com/api/v1/users/search?searchTerm=${term}`,
             {
               headers: {
                 "Content-type": "application/json",

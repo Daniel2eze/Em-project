@@ -51,7 +51,7 @@ const SignUp = () => {
       setsuccessMsg('');
       setserverError("")
       try {
-        const req = await fetch("http://localhost:5785/api/vi/auth/register",{
+        const req = await fetch("https://em-backend-chra.onrender.com/api/vi/auth/register",{
           method:"POST",
           headers:{
             "Content-type":"application/json"
